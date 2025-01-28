@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat">
+    <div class="screen">
+      <div class="input-form">
+        <h2>Chat Application</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username">
+      </div>
+      <div class="input-form">
+        <button id="join-user">Join</button>
+      </div>
+    </div>
+    <div class="chat-screen">
+      <div class="exit-btn">
+        <button id="exit">Exit</button>
+      </div>
+      <div class="messages">
+        <div class="message-area"></div>
+      </div>
+      <div class="send">
+        <input type="text" id="send-message" placeholder="Type a message...">
+        <input type="file" id="media-upload" style="display: none;" accept="image/*">
+        <label for="media-upload">
+          <img src="https://www.svgrepo.com/show/521989/attachment.svg" alt="Upload Media" class="media-icon">
+        </label>
+        <button id="send-button">Send</button>
+      </div>
+      
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
